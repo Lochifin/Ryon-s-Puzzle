@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+		<title>Ryon's Puzzle</title>
+		<style>
+			body {
+				background-color:#ADD8E6;
+				font-family:'Comic Sans MS',sans-serif;
+				text-align:center;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+				height:100vh;
+				margin:0;
+			}
+			h1,h3 {
+				margin:20px;
+				opacity:0;
+			}
+			.buttons{
+				margin-top:30px;
+				opacity:0;
+				animation:zoomIn 1s ease forwards;
+				animation-delay:2s;
+			}
+			button {
+				padding: 10px 20px;
+				font-size:16px;
+				cursor:pointer;
+				background-color:#FF6347;
+				color:white;
+				border:2px solid #FF4500;
+				border-radius:10px;
+				transition:transform 0.3s ease,background-color 0.3 ease;
+				margin:10px;
+			}
+			button:hover {
+				transform:scale(1.1);
+				background-color:#FF4500;
+			}
+			@keyframes slideDown {
+				0%{transform:translateY(-100px);opacity:0;}
+				100%{transform:translateY(0);opacity:1;}
+			}
+			@keyframes zoomIn {
+				0%{transform:scale(0.5);opacity:0;}
+				100%{transform:scale(1);opacity:1;}
+			}
+			h1 {
+				animation:slideDown 1s ease forwards;
+			}
+			h3 {
+				animation:zoomIn 1s ease forwards;
+				animation-delay:1.5s;
+			}
+			.subscription {
+				position:absolute;
+				top:10px;
+				right:10px;
+				color:red;
+				font-weight:bold;
+				z-index:10;
+				display:flex;
+				align-items:center;
+			}
+			.youtube {
+				width:30px;
+				height:auto;
+				margin-left:10px;
+				vertical-align:middle;
+			}
+			.top-left {
+				position:absolute;
+				top:10px;
+				left:10px;
+				display:flex;
+				flex-direction:column;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="subscription">
+			Subscribe to my YouTube channel!<br>(Click the logo beside me!)
+				<a href=https://youtube.com/@mapleyellow?si=g9UAGdOfHaBNsz0e"target="_blank">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"alt="YouTube"class="youtube">
+				</a>
+		</div>
+		<div class="top-left">
+			<button onclick="location.href='questionlist.html'">Questions List</button>
+			<button onclick="alert('Ryon\'s Story : Coming Soon!')">Ryon's Story</button>
+		</div>
+		<h1>RYON'S PUZZLE</h1>
+		<h3>This website was made by Ryon, in purpose of challenging people with mind-blowing objective puzzles! Are you ready to strive into the challenge?</h3>
+		<div class="buttons">
+			<button onclick=location.href='question1.html'>Bring it on!</button>
+			<button onclick="alert('Okay. Let me know when you\'re ready. I\'ll see you around.')">Nah, later.</button>
+		</div>
+	</body>
+</html>
+			
